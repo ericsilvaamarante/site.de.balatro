@@ -10,12 +10,24 @@
     font-style: normal;
   }
   
+
+  :root {
+    --laranja-claro: #3f2aff;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #1100ff;
+}
+
   .coda-extrabold {
     font-family: "Coda", system-ui;
     font-weight: 800;
     font-style: normal;
   }
   
+  .texto-pequeno {
+    font-size: 12px; /* Tamanho do texto em pixels */
+  }
+
 body {
     font-size: 1rem;
     font-family: 'Montserrat';
@@ -58,6 +70,34 @@ section {
     height: auto;
 }
 
+.menu-acessibilidade{
+    position: fixed;
+    color: #ffffff;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresenta-lista{
+    display: none;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+
 
 .esquerda-conteudo {
     display: flex;
@@ -97,9 +137,11 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('file:///C:/Users/Home/Downloads/imagens/chara-undertale.gif') top right no-repeat,
-        url('https://media.tenor.com/2qmJlP8cqJ0AAAAi/v2-v1.gif') top left no-repeat;
-    background-size: 180px 180px;
+    background: url('https://static.wikia.nocookie.net/balatrogame/images/0/07/Hologram.gif/revision/latest?cb=20240413030441') top right no-repeat,
+    url('https://oyster.ignimgs.com/mediawiki/apis.ign.com/balatro/c/c5/Scholar.png?width=325') top left no-repeat,
+    url('file:///C:/Users/Home/Desktop/Opera%20Instantâneo_2025-03-13_222031_index.html.png') top left repeat,
+    url('https://oyster.ignimgs.com/mediawiki/apis.ign.com/balatro/c/c5/Scholar.png?width=325') top left no-repeat;
+    background-size: 300px 450px;
     /* Ajuste o tamanho conforme necessário */
 }
 
@@ -111,7 +153,10 @@ section {
     z-index: 1;
     /* Garante que o conteúdo fica acima das imagens do background */
 }
-
+.a {
+    width: 900px; /* Define a largura */
+    height: auto;
+}
 
 h2 {
     font-family: 'Lemon', serif;
@@ -120,15 +165,16 @@ h2 {
     color: var(--laranja-claro);
 }
 
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
 #galeria {
-    background-color: #80b3ff;
+    background-color: #1c2c2c;
 
 }
 
-.fundo-galeria {
-    background: url('file:///C:/Users/Home/Downloads/imagens/cirno-cirno-fumo.gif') bottom right no-repeat;
-    background-size: 180px 180px;
-}
 
 #contato {
     background-image: url('img/4965007.jpg');
@@ -157,5 +203,5 @@ h2 {
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #383aac;
+    background-color: #ffffff;
 }

@@ -16,3 +16,14 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 
 })
+const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
+const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
+botaoDeAcessibilidade.addEventListener('click', function (){
+    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+    opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+   })
+   function moverImagem() {
+    const imagem = document.getElementById("img");
+    imagem.style.top = "200px"; // Nova posição vertical
+    imagem.style.left = "200px"; // Nova posição horizontal
+   }
