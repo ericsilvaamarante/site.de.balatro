@@ -22,8 +22,9 @@ botaoDeAcessibilidade.addEventListener('click', function (){
     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
     opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
    })
-   function moverImagem() {
-    const imagem = document.getElementById("img");
-    imagem.style.top = "200px"; // Nova posição vertical
-    imagem.style.left = "200px"; // Nova posição horizontal
-   }
+   const alternaContraste = document.getElementById('alterna-contraste')
+   alternaContraste.addEventListener('click', function(){
+    document.body.classList.toggle('alto-contraste')
+})
+const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)

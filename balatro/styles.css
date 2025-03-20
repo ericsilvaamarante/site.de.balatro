@@ -8,25 +8,52 @@
     font-family: "Coda", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
 
-  :root {
+
+:root {
     --laranja-claro: #3f2aff;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #1100ff;
+    --alto-contraste-link: #7feb37;
 }
 
-  .coda-extrabold {
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+.alto-contraste #tropicalia {
+    background: none;
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+.coda-extrabold {
     font-family: "Coda", system-ui;
     font-weight: 800;
     font-style: normal;
-  }
-  
-  .texto-pequeno {
+}
+
+.texto-pequeno {
     font-size: 12px; /* Tamanho do texto em pixels */
-  }
+}
 
 body {
     font-size: 1rem;
@@ -134,6 +161,7 @@ section {
 
 #tropicalia {
     position: relative;
+    background-color: #1c2c2c;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -142,6 +170,7 @@ section {
     url('file:///C:/Users/Home/Desktop/Opera%20Instantâneo_2025-03-13_222031_index.html.png') top left repeat,
     url('https://oyster.ignimgs.com/mediawiki/apis.ign.com/balatro/c/c5/Scholar.png?width=325') top left no-repeat;
     background-size: 300px 450px;
+    background-color: #1c2c2c;
     /* Ajuste o tamanho conforme necessário */
 }
 
@@ -185,7 +214,7 @@ h2 {
 }
 
 .formulario {
-    background-color: #ffffff;
+    background-color: #f54747;
     padding: 2rem;
     /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
@@ -196,7 +225,7 @@ h2 {
 }
 
 .formulario button {
-    background-color: #ffffff;
+    background-color: #0462a0;
     border: none;
     font-weight: bold;
 }
